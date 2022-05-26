@@ -12,7 +12,6 @@ app.get('/greet/:name', (req, res) => {
 app.get('/add/:first/:second', (req, res) => {
   axios.get(`http://cal:9000/sum/${req.params.first}/${req.params.second}`)
   .then(resp => {
-    console.log(resp)
     res.json({
       sum: resp.data.result,
     })
