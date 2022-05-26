@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  cal:
+  calculator:
     build:
       context: ./calculator
     ports:
@@ -13,4 +13,4 @@ services:
     ports:
       - "9002:9000"
     depends_on:
-      - cal
+      - calculator
