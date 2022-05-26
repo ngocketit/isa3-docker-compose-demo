@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  cal:
+    build:
+      context: ./calculator
+    ports:
+      - "9001:9000"
+
+  greet:
+    build:
+      context: ./greet
+    ports:
+      - "9002:9000"
+    depends_on:
+      - cal
