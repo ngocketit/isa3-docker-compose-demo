@@ -1,4 +1,3 @@
-* Docker compose demo
 This demo shows how to build services and make them talk to each other using docker-compose. In order to run:
 
 1. You need to have Docker installed on your machine. For how to do it, check https://docs.docker.com/get-docker/
